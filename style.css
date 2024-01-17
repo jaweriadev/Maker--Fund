@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+*p {
+  font-weight: 400;
 }
 
 .navbar {
@@ -10,6 +13,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
+  position: sticky;
+  top: 0;
 }
 
 .logo img {
@@ -22,17 +27,9 @@ body {
   color: #333;
   transition: 0.3s;
 }
-.toggle-icon:hover span:nth-child(1) {
-  transform: translateX(4px);
-}
-
-.toggle-icon:hover span:nth-child(3) {
+.toggle-btn:hover {
   transform: translateX(-4px);
 }
-/* .toggle-btn:hover {
-  color: #ffd700; 
-  transform: translateY(-50%);
-}  */
 
 .content {
   display: none;
@@ -40,17 +37,183 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  background-color: #222143;
   color: white;
   text-align: center;
   padding-top: 50px;
+}
+.content-img {
+  max-width: 737px;
+  width: 50%;
+}
+
+.content-logo {
+  /* transform-origin: 50% 50% 0px; */
+  opacity: 1;
+  display: flex;
+  position: absolute;
+  left: 220px;
+  height: 100vh;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  /* transition: opacity 1s ease, transform 1s ease; */
+  transform: translate(-50%, -50%);
+}
+.content-text {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 80px;
+}
+.content-text h1 {
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: -1.5px;
+  line-height: 5px;
+  color: white;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.content-text h1:hover {
+  color: #ff5733;
+  transform: translateX(10px);
+  cursor: pointer;
+}
+.content-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 92px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.content-text a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+}
+.content-text a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-text a:hover::before {
+  transform: scaleX(1); /* Reveal the border on hover */
+}
+
+/* Add a delay before the border disappears */
+.content-text a:hover::before {
+  transition-delay: 0.2s; /* Change the delay time as needed (in seconds) */
 }
 
 .close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: 2.5rem;
   cursor: pointer;
+  /* border: 2px solid #fff; */
+  /* border-radius: 50%; */
+  /* padding: 22px; */
+  /* width: 12px; */
+  /* height: 11px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* padding-left: 16px; */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.close-btn:hover {
+  transform: translate(-50%, -50%) rotate(360deg);
+  transform: scale(1.2);
+}
+
+.content-all {
+  display: flex;
+}
+.info {
+  line-height: 120px;
+}
+
+.builders {
+  background: linear-gradient(0deg, rgb(255, 79, 82) 0%, rgb(57, 58, 220) 100%);
+  -webkit-background-clip: text; /* Clip text to the background gradient */
+  color: transparent;
+  display: inline-block;
+}
+.hero-text h1 {
+  font-size: 4.5em;
+  line-height: 58px;
+}
+.hero-text p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.hero-section {
+  display: flex;
+  padding: 50px;
+}
+.left-hero {
+  width: 50%;
+  padding-top: 100px;
+}
+.right-hero {
+  width: 49%;
+  text-align: center;
+}
+.cube img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  padding-right: 40px;
+}
+.cube:hover img {
+  /* transform: translateX(20px); */
+  transform: rotate(45deg);
+}
+.scrol {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  cursor: pointer;
+  padding-top: 40px;
+}
+.arrow {
+  transition: transform 0.3s ease-in-out;
+}
+#scroll-text {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.scrol:hover #scroll-text {
+  transform: translateY(10px);
+}
+
+.scrol:hover .arrow {
+  transform: translateY(10px);
+}
+
+.orange img {
+  padding-top: 0;
+}
+.support {
+  color: #3d3edd;
+  font-size: 2em !important;
+}
+.second-right {
+  text-align: unset !important;
 }

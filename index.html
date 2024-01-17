@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Makers Fund</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css    "
+    />
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,19 +22,81 @@
       <div class="navbar">
         <div class="logo"><img src="images/logo.png" alt="logo" /></div>
         <div class="toggle-btn" onclick="toggleContent()">
-          ☰
-          <span></span>
-          <span></span>
-          <span></span>
+          <i class="fa-solid fa-bars"></i>
         </div>
       </div>
 
       <div class="content" id="content">
-        <div class="close-btn" onclick="closeContent()">✖</div>
-        <p>content</p>
+        <div class="close-btn" onclick="closeContent()">
+          <!-- ✖  -->
+          <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="content-all">
+          <div class="content-img">
+            <img
+              src="images/content-logo.jpg"
+              alt="logo"
+              class="content-logo"
+            />
+          </div>
+          <div class="content-text">
+            <h4>Makers Fund</h4>
+            <h1>Home</h1>
+            <h1>Team</h1>
+            <h1>Portfolio</h1>
+            <h1>News</h1>
+            <h1>Jobs</h1>
+            <div class="content-links">
+              <a>Linkedln</a>
+              <a>Twitter</a>
+            </div>
+
+            <p class="info">info@makersfund.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-section">
+        <div class="left-hero">
+          <div class="hero-text">
+            <h1>
+              BACKING <span class="builders">BUILDERS</span> OF THE FUTURE OF
+              INTERACTIVE <span class="builders">ENTERTAINTMENT</span>
+            </h1>
+            <p>
+              Makers Fund is a global venture capital fund dedicated to games
+              and interactive entertintment
+            </p>
+          </div>
+        </div>
+        <div class="right-hero">
+          <div class="cube">
+            <img src="images/cubic.jpg" alt="cube" />
+          </div>
+          <div class="scrol">
+            <p id="scroll-text">Scroll to discover</p>
+            <i class="fa-solid fa-arrow-down arrow"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-section">
+        <div class="left-hero second-left">
+          <div class="cube orange">
+            <img src="images/orangesnake.webp" alt="cube" />
+          </div>
+        </div>
+        <div class="right-hero second-right">
+          <div class="hero-text second-text">
+            <p class="support">We support</p>
+            <h1>INNOVATIVE, <span class="builders">AMBITIOUS</span>FOUNDERS</h1>
+            <p>
+              Our fund helps visionary enterpreneures create their initial
+              foundation and support them as they navigate the waters of
+              early-stage business
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
