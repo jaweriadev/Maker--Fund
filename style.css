@@ -328,3 +328,114 @@ body {
     transform: rotate(360deg);
   }
 }
+/* arrow section */
+/* .arrow-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+.section {
+  text-align: center;
+  border-radius: 8px;
+  
+} */
+
+/* button {
+  cursor: pointer;
+  
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 10px;
+  max-width: 100px;
+  width: 100%;
+  height: 80px;
+  border-color: #3d3edd;
+}
+.sec-heading {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.arrow-head {
+  text-align: center;
+}
+.arrow-head h2 {
+  font-size: 100px;
+}
+.arrow-head p {
+  font-size: 50px;
+  color: #3d3edd;
+} */
+/* 2nd last section */
+.second-last-section {
+  max-width: 100vw;
+  text-align: center;
+}
+.last-section-text h2 {
+  font-size: 100px;
+}
+.second-last-section p {
+  font-size: 60px;
+  color: #3d3edd;
+  text-align: start;
+  padding-left: 400px;
+}
+/* footer */
+footer {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.copy {
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  display: none; /* Hide by default */
+}
+.scroll-to-top:hover {
+  transform: translateY(-10px); /* Move the button upward on hover */
+}
+/* Media queries */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for medium screens */
+  /* Add your medium screen-specific styles here */
+}
