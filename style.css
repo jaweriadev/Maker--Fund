@@ -432,7 +432,16 @@ nav li a:hover {
   transform: translateY(-10px); /* Move the button upward on hover */
 }
 /* Media queries */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 724px) and (max-width: 1024px) {
+  .content-img {
+    display: none;
+  }
+  .content-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
