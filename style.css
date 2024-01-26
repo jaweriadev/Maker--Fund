@@ -507,4 +507,8 @@ nav li a:hover {
     flex-wrap: wrap;
     flex-direction: column;
   }
+  .cube img {
+    max-width: 200px;
+    width: 100%;
+  }
 }
