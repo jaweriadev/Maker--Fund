@@ -10,6 +10,7 @@ body {
   max-width: 1840px;
   margin: 0 auto;
   padding: 0 112px;
+  overflow: hidden;
 }
 .navbar {
   background-color: #fff;
@@ -48,6 +49,7 @@ body {
   text-align: center;
   padding-top: 50px;
   z-index: 2;
+  overflow-y: hidden;
 }
 .content-img {
   /* max-width: 737px; */
