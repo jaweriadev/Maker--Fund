@@ -62,6 +62,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .content-text {
   width: 49%;
   display: flex;
@@ -203,6 +204,10 @@ body {
 
 .orange img {
   padding-top: 0;
+}
+.second {
+  display: flex;
+  gap: 30px;
 }
 .support {
   color: #3d3edd;
@@ -468,7 +473,7 @@ nav li a:hover {
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+@media only screen and (min-width: 375px) and (max-width: 599px) {
   .container-all {
     flex-wrap: wrap;
   }
@@ -508,7 +513,7 @@ nav li a:hover {
     flex-direction: column;
   }
   .cube img {
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
   }
 }

@@ -34,3 +34,22 @@ window.onscroll = function () {
     scrollButton.style.display = "none";
   }
 };
+// gsap
+gsap.from(".cube", {
+  x: 500,
+  y: 100,
+  rotate: 360,
+  duration: 5,
+  repeat: -1,
+});
+const tl = gsap.timeline();
+tl.from(
+  ".hero-text",
+  {
+    x: "-100%",
+    opacity: 0,
+    ease: "bace",
+    duration: 2,
+  },
+  2
+);
